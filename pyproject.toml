@@ -1,0 +1,8 @@
+[project]
+name = "my-cli"
+
+[project.scripts]
+my-cli = "my_cli.__main__:main"
+
+[tool.uv]
+package = true
