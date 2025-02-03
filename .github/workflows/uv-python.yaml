@@ -40,8 +40,8 @@ jobs:
       - name: Set binary permissions
         if: runner.os != 'Windows'
         run: |
-          chmod +x my-cli-${{ matrix.os }}.bin
+          chmod +x ./my-cli-${{ matrix.os }}.bin
 
       - name: Run binary
         run: |
-          my-cli-${{ matrix.os }}.bin
+          ./my-cli-${{ matrix.os }}.bin
