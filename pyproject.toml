@@ -1,5 +1,6 @@
 [project]
 name = "my-cli"
+version = "0"
 
 [project.scripts]
 my-cli = "my_cli.__main__:main"
