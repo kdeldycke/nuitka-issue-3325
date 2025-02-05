@@ -24,11 +24,11 @@ jobs:
           python-version: "3.13"
       - name: Install uv
         run: |
-          python -m pip install "uv == 0.5.26"
+          python -m pip install "uv == 0.5.28"
       - name: Install Nuitka
         run: |
           uv --no-progress venv
-          uv --no-progress pip install "nuitka == 2.6.2"
+          uv --no-progress pip install "nuitka == 2.6.4"
 
       - name: uv run -m nuitka --version
         run: |

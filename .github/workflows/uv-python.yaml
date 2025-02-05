@@ -21,11 +21,11 @@ jobs:
       - uses: actions/checkout@v4.2.2
       - name: Install uv
         run: |
-          python -m pip install "uv == 0.5.26"
+          python -m pip install "uv == 0.5.28"
       - name: Install Nuitka
         run: |
           uv --no-progress venv --python 3.13
-          uv --no-progress pip install "nuitka == 2.6.2"
+          uv --no-progress pip install "nuitka == 2.6.4"
 
       - name: uv run -m nuitka --version
         run: |
