@@ -36,7 +36,7 @@ jobs:
 
       - name: Build binary
         run: >
-          uv --no-progress run --frozen --module -- nuitka
+          uv --no-progress run --frozen --module -- nuitka --verbose
           --onefile --assume-yes-for-downloads --output-filename=my-cli-${{ matrix.os }}.bin
           my_cli/__main__.py
 
